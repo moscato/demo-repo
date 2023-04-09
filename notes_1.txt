@@ -37,7 +37,62 @@ git add . would work for the entire directory (staged)
 
 Now that the changes are staged, we can commit
 
-It isnt working... but git push does?
+git commit -m "~~~" doesnt work
+bash: $'\302\203git': command not found
+
+git commit and then notes in github then close does... apparently
+
+This is only local though, now we git push
+Except not really, cause we need to set up the SSH key.
+
+we do this with git command
+ssh-keygen -t rsa -b 4096 -C "email@example.com"
+
+where 
+-t == type of encryption
+-b == strength of encryption
+-C == email associated with your github
+
+We named the key testkey and set no password, so we can now find it using 
+ls | grep testkey
+(I assume it exists in this directory)
+
+we return testkey & testkey.pub
+testkey.pub is what we will upload to github
+
+
+cat testkey.pub > copy this and paste into profile > 
+settings > shh and GPH keys > new key > paste it.
+
+git push origin master ... works.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
