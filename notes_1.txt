@@ -1,0 +1,52 @@
+Git and GitHub for Beginners - Crash Course
+https://www.youtube.com/watch?v=RGOj5yH7evk
+
+Start with git commands:
+clone > aBring a repository that is hosted somewhere like github
+into your machine.
+
+add > Track your files and changes in git
+
+commit > Save your files in git
+
+push > upload git commits to a remote repo, like Github
+
+pull > Download changes from remote repo to your local machine,
+        opposite of push
+
+
+So lets make a repo and get it into git.
+Start by making a repo and use the Clone SSH value under Code
+use git clone to bring that into your git folder, looks like this
+
+git clone https://gitforwindows.org/
+
+
+** we had to git init the parent folder for this to work
+** Also uninstall / re-install with this advice
+** https://stackoverflow.com/questions/55355147/fatal-protocol-https-is-not-supported
+** git remote add origin https://github.com/moscato/demo-repo.git
+** not sure if this step was necessary though
+
+But now we have the folder in VS code.
+
+SO if we run git status, we can see untracked files.
+we need to track them so git knows about them.
+
+git add . would work for the entire directory (staged)
+
+Now that the changes are staged, we can commit
+
+It isnt working... but git push does?
+
+
+
+
+
+
+
+
+
+
+
+
