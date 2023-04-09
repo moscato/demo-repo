@@ -8,5 +8,23 @@
 </head>
 <body>
     <h1>Pushed wit_git</h1>
+      <hr>
+    <input type="txtIn" class="txtIn">
+      <br>
+    <button class="sendBtn">GO!</button>
+      <br>
+    <h1 class="here">~~</h1>
+
+<script>
+    const sendBtn = document.querySelector('.sendBtn');
+    let txtIn = document.querySelector('.txtIn');
+    let here = document.querySelector('.here');
+
+    sendBtn.addEventListener('click', () => {
+        let val = txtIn.value
+
+        here.textContent = val;
+    })
+</script>
 </body>
 </html>

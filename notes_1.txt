@@ -67,6 +67,13 @@ settings > shh and GPH keys > new key > paste it.
 git push origin master ... works.
 
 
+SOOOOOOO the workflow for pushing to repo goes:
+
+git add .
+git commit . -m "Whatever comment"
+git push origin main
+
+
 
 
 
